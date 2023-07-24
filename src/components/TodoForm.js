@@ -5,7 +5,7 @@ const TodoApp = () => {
   const [newTodo, setNewTodo] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/todos") // Replace with your Flask API URL
+    fetch("https://flask-api-5.onrender.com/api/todos") // Replace with your Flask API URL
       .then((response) => response.json())
       .then((data) => setTodos(data.todos))
       .catch((error) => console.error(error));
@@ -31,7 +31,7 @@ const TodoApp = () => {
       //     setNewTodo("");
       //   })
       //   .catch((error) => console.error(error));
-      fetch("http://localhost:5000/api/todos", {
+      fetch("https://flask-api-5.onrender.com/api/todos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
