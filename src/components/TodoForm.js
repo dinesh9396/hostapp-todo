@@ -5,7 +5,7 @@ const TodoApp = () => {
   const [newTodo, setNewTodo] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/todos")
+    fetch("https://flask-api-5.onrender.com/api/todos")
       .then((response) => response.json())
       .then((data) => setTodos(data.todos))
       .catch((error) => console.error(error));
@@ -18,7 +18,7 @@ const TodoApp = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (newTodo.trim() !== "") {
-      fetch("http://localhost:5000/api/todos", {
+      fetch("https://flask-api-5.onrender.com/api/todos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
