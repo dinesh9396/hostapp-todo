@@ -1,12 +1,12 @@
-import React from "react";
-import TodoForm from "./TodoForm";
+// import React from "react";
+// import TodoForm from "./TodoForm";
 
-const Todo = () => {
-  return (
-    <div>
-      <TodoForm />
-    </div>
-  );
-};
+// const Todo = () => {
+//   return (
+//     <div>
+//       <TodoForm />
+//     </div>
+//   );
+// };
 
-export default Todo;
+// export default Todo;

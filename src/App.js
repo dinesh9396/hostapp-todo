@@ -1,12 +1,11 @@
-import "./App.css";
-import Todo from "./components/Todo";
+const RemoteApp = React.lazy(() => import("app2/App"));
 
 function App() {
   return (
-    <div className="App">
-      <Todo />
+    <div>
+      <React.Suspense fallback="Loading Remote App...">
+        <RemoteApp />
+      </React.Suspense>
     </div>
   );
 }
-
-export default App;
